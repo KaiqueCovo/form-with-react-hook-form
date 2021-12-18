@@ -6,7 +6,6 @@ import {
   Input as InputChakra,
 } from "@chakra-ui/react";
 
-
 interface IInputProps extends InputProps {
   error?: string;
 }
