@@ -13,7 +13,7 @@ interface ISelectProps extends ReactSelectProps {
 }
 
 export const Select = ({ isInvalid, error, ...resProps}: ISelectProps): React.ReactElement => (
-  <FormControl isInvalid={!!isInvalid}>
+  <FormControl isInvalid={isInvalid}>
     <ReactSelect
       classNamePrefix='select'
       closeMenuOnSelect={true}
