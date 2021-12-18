@@ -7,6 +7,9 @@ import {
   useToast
 } from '@chakra-ui/react';
 import { Controller, useForm } from 'react-hook-form';
+import { yupResolver } from '@hookform/resolvers/yup';
+
+import { contactValidationSchema } from '@/validations';
 
 import { Input, Select } from '../'
 
@@ -15,6 +18,7 @@ export function Form() {
 
   const {register, control, formState: { errors }, ...form } = useForm({
     mode: 'onBlur',
+    resolver: yupResolver(contactValidationSchema),
     defaultValues: {
       name: '',
       lastName: '',
@@ -70,24 +74,32 @@ export function Form() {
           name='name'
           type='text'
           placeholder='First name'
+          isInvalid={!!errors.name?.message}
+          error={errors.name?.message}
           {...register('name') }
         />
         <Input
           name='lastName'
           type='text'
           placeholder='Last name'
+          isInvalid={!!errors.lastName?.message}
+          error={errors.lastName?.message}
           {...register('lastName') }
         />
         <Input
           name="email"
           type="email"
           placeholder='Email'
+          isInvalid={!!errors.email?.message}
+          error={errors.email?.message}
           {...register('email') }
         />
         <Input
           name="cellphone"
           type="tel"
           placeholder='Cell phone'
+          isInvalid={!!errors.cellphone?.message}
+          error={errors.cellphone?.message}
           {...register('cellphone') }
         />
         <Controller
@@ -102,13 +114,15 @@ export function Form() {
                 { label: 'Designer', value: 'designer' },
                 { label: 'People', value: 'people' },
               ]}
+              isInvalid={!!errors.job?.message}
+              error={errors.job?.message}
             />
           )}
         ></Controller>
         
       </Stack>
       <Button
-      type='submit'
+        type='submit'
         fontFamily={'heading'}
         mt={8}
         w={'full'}
