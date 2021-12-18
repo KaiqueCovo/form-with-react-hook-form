@@ -1,0 +1,38 @@
+.select {
+  &__control {
+    background-color: var(--chakra-colors-gray-100) !important;
+    border: 0 !important;
+    min-height: 40px !important;
+  }
+
+  &__placeholder {
+    color: var(--chakra-colors-gray-500) !important;
+  }
+
+  &__value-container {
+    padding-inline-start: var(--chakra-space-4) !important;
+    padding-inline-end: var(--chakra-space-4) !important;
+  }
+
+  &__single-value {
+    color: var(--chakra-colors-gray-500) !important;
+  }
+  
+  &__menu {
+    background-color: var(--chakra-colors-gray-100) !important;
+    border: 0 !important;
+  }
+
+  &__option {
+    color: var(--chakra-colors-gray-500) !important;
+    cursor: pointer !important;
+
+    &--is-focused {
+      background-color: var(--chakra-colors-gray-200) !important;
+    }
+
+    &--is-selected {
+      background-color: var(--chakra-colors-gray-200) !important;
+    }
+  }
+}

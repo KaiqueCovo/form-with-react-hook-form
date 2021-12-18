@@ -6,7 +6,8 @@ import {
   Button,
 } from '@chakra-ui/react';
 
-import { Input } from '../'
+import { Input, Select } from '../'
+
 
 export function Form() {
   return (
@@ -39,12 +40,12 @@ export function Form() {
         <Input
           name='name'
           type='text'
-          placeholder='Nome'
+          placeholder='First name'
         />
         <Input
           name='lastName'
           type='text'
-          placeholder='Sobrenome'
+          placeholder='Last name'
         />
         <Input
           name="email"
@@ -54,7 +55,15 @@ export function Form() {
         <Input
           name="phone"
           type="tel"
-          placeholder='Celular'
+          placeholder='Cell phone'
+        />
+        <Select
+          placeholder="Jobs"
+          options={[
+            { label: 'Engenieer', value: 'engenieer' },
+            { label: 'Designer', value: 'designer' },
+            { label: 'People', value: 'people' },
+          ]}
         />
       </Stack>
       <Button
