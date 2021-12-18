@@ -11,7 +11,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 
 import { contactValidationSchema } from '@/validations';
 
-import { Input, Select } from '../'
+import { Input, Select, PhoneInput } from '../'
 
 export function Form() {
   const toast = useToast()
@@ -94,13 +94,19 @@ export function Form() {
           error={errors.email?.message}
           {...register('email') }
         />
-        <Input
+        <Controller
           name="cellphone"
-          type="tel"
-          placeholder='Cell phone'
-          isInvalid={!!errors.cellphone?.message}
-          error={errors.cellphone?.message}
-          {...register('cellphone') }
+          control={control}
+          render={({ field: { onChange } }) => (
+            <PhoneInput
+              name="cellphone"
+              type="tel"
+              placeholder='Cell phone'
+              onValueChange={val => onChange(val.floatValue)}
+              isInvalid={!!errors.cellphone?.message}
+              error={errors.cellphone?.message}
+            />
+          )}
         />
         <Controller
           name='job'
