@@ -13,17 +13,22 @@
 
 ---
 
-<p align="center">
+<div align="center">
   <a href="#dart-about">:dart:&nbsp;&nbsp;About</a> &nbsp; | &nbsp; 
   <a href="#rocket-technologies">:rocket:&nbsp;&nbsp;Technologies</a> &nbsp; | &nbsp;
   <a href="#white_check_mark-requerimentos">:white_check_mark::&nbsp;&nbsp;Requerimentos</a> &nbsp; | &nbsp;
   <a href="#checkered_flag-começando">:checkered_flag::&nbsp;&nbsp;Começando</a>
+</div>
 
-  <img src=".github/mockup.png" alt="mockup" />
+<div align="center">
 
-  <a href="https://job-contact.netlify.app"><img src=".github/demo.png" alt="button demo" /></a>
-
-</p>
+  <img alt="Mockup" src=".github/mockup.png">
+  <br>
+  <br>
+  <a href="https://job-contact.netlify.app" target="_blank">
+    <img alt="Demo on Netlify" src=".github/demo.png" width="300px">
+  </a>
+</div>
 
 <br>
 

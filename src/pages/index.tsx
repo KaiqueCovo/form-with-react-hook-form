@@ -6,29 +6,35 @@ import {
   IconProps,
   Icon,
 } from '@chakra-ui/react';
+import Head from 'next/head'
 
 import { Navbar, Developers, Form } from '@/components';
 
 export default function JoinOurTeam() {
-  return (    
-    <Box position={'relative'}>
-      <Navbar />
-      <Container
-        as={SimpleGrid}
-        maxW={'7xl'}
-        columns={{ base: 1, md: 2 }}
-        spacing={{ base: 10, lg: 32 }}
-        py={{ base: 10, sm: 20, lg: 32 }}>
-        <Developers />
-        <Form />
-      </Container>
-      <Blur
-        position={'absolute'}
-        top={-10}
-        left={-10}
-        style={{ filter: 'blur(70px)' }}
-      />
-    </Box>
+  return (
+    <>
+      <Head>
+        <title>Contact Form</title>
+      </Head>
+      <Box position={'relative'}>
+        <Navbar />
+        <Container
+          as={SimpleGrid}
+          maxW={'7xl'}
+          columns={{ base: 1, md: 2 }}
+          spacing={{ base: 10, lg: 32 }}
+          py={{ base: 10, sm: 20, lg: 32 }}>
+          <Developers />
+          <Form />
+        </Container>
+        <Blur
+          position={'absolute'}
+          top={-10}
+          left={-10}
+          style={{ filter: 'blur(70px)' }}
+        />
+      </Box>
+    </>
   );
 }
 
