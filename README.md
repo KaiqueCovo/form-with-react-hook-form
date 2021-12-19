@@ -1,34 +1,69 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">
+  <img src=".github/logo.png" alt="logo" />
+</h1>
 
-## Getting Started
+<div align="center">
 
-First, run the development server:
+<!-- Badges -->
+![GitHub top language](https://img.shields.io/github/languages/top/kaiquecovo/form-with-react-hook-form?color=%23718096)
+![GitHub last commit](https://img.shields.io/github/last-commit/kaiqueCovo/form-with-react-hook-form?color=%231A202C)
+![GitHub repo size](https://img.shields.io/github/repo-size/kaiqueCovo/form-with-react-hook-form?color=%23718096)
+![GitHub made by](https://img.shields.io/badge/made%20by-kaiqueCovo-%231A202C)
+</div>
+
+---
+
+<p align="center">
+  <a href="#dart-about">:dart:&nbsp;&nbsp;About</a> &nbsp; | &nbsp; 
+  <a href="#rocket-technologies">:rocket:&nbsp;&nbsp;Technologies</a> &nbsp; | &nbsp;
+  <a href="#white_check_mark-requerimentos">:white_check_mark::&nbsp;&nbsp;Requerimentos</a> &nbsp; | &nbsp;
+  <a href="#checkered_flag-começando">:checkered_flag::&nbsp;&nbsp;Começando</a>
+
+  <img src=".github/mockup.png" alt="mockup" />
+
+  <a href="https://job-contact.netlify.app"><img src=".github/demo.png" alt="button demo" /></a>
+
+</p>
+
+<br>
+
+## :dart: Sobre ##
+
+The project  is a study with [React Hook Form](https://react-hook-form.com), [Chakra UI](https://chakra-ui.com) and [Yup](https://github.com/jquense/yup) library.
+
+## :rocket: Technologies ##
+
+This project was developed with the following technologies:
+
+- [Next.js](https://nextjs.org/)
+- [React Hook Form](https://react-hook-form.com)
+- [Chakra UI](https://chakra-ui.com)
+- [Yup](https://github.com/jquense/yup)
+- [React Select](https://react-select.com)
+- [React Number Format](https://github.com/s-yadav/react-number-format)
+- [Sass](https://sass-lang.com)
+
+## :white_check_mark: Requirements ##
+
+- [Git](https://git-scm.com/)
+- [Node](https://nodejs.org/en/)
+- [Yarn](https://yarnpkg.com/lang/en/)
+
+## :checkered_flag: Starting ##
 
 ```bash
-npm run dev
-# or
-yarn dev
+# Clone this project
+$ git clone git@github.com:KaiqueCovo/form-with-react-hook-form.git
+
+# Go into the repository
+$ cd form-with-react-hook-form
+
+# Install dependencies
+$ yarn install
+
+# Run the project
+$ yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
+Made with ♥  by [Kaique Covo](https://www.linkedin.com/in/kaique-covo-a46331147/) :wave:
