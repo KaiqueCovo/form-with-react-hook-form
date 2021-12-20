@@ -27,11 +27,12 @@ export function Navbar() {
 
           <Flex alignItems={'center'}>
             <Stack direction={'row'} alignItems={'center'} spacing={7}>
-              <Button onClick={toggleColorMode}>
+              <Button type='button' aria-label='button-theme' onClick={toggleColorMode}>
                 {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
               </Button>
               <Avatar
                 src={'https://avatars.githubusercontent.com/u/31021982?v=4'}
+                name='avatar-kaique-github'
                 size={'sm'}
                 position={'relative'}
                 zIndex={2}

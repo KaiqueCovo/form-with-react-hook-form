@@ -74,6 +74,7 @@ export function Developers() {
       </Text>
       <Avatar
         src='https://avatars.githubusercontent.com/u/31021982?v=4'
+        name='avatar-github'
         size={useBreakpointValue({ base: 'md', md: 'lg' })}
         position={'relative'}
         zIndex={2}
