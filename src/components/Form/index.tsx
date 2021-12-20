@@ -71,6 +71,7 @@ export function Form() {
     <Box as={'form'} mt={10} onSubmit={handleSubmit}>
       <Stack spacing={4}>
         <Input
+          id='name'
           name='name'
           type='text'
           placeholder='First name'
@@ -79,6 +80,7 @@ export function Form() {
           {...register('name') }
         />
         <Input
+          id='lastName'
           name='lastName'
           type='text'
           placeholder='Last name'
@@ -87,6 +89,7 @@ export function Form() {
           {...register('lastName') }
         />
         <Input
+          id='email'
           name="email"
           type="email"
           placeholder='Email'
@@ -99,6 +102,7 @@ export function Form() {
           control={control}
           render={({ field: { onChange } }) => (
             <PhoneInput
+              id='cellphone'
               name="cellphone"
               type="tel"
               placeholder='Cell phone'
@@ -113,6 +117,7 @@ export function Form() {
           control={control}
           render={({ field: { onChange } }) => (
             <Select
+              instanceId="job"
               placeholder="Jobs"
               onChange={val => onChange( val.value )}
               options={[
@@ -124,8 +129,7 @@ export function Form() {
               error={errors.job?.message}
             />
           )}
-        ></Controller>
-        
+        />
       </Stack>
       <Button
         type='submit'
