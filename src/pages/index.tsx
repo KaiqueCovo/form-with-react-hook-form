@@ -15,6 +15,7 @@ export default function JoinOurTeam() {
     <>
       <Head>
         <title>Contact Form</title>
+        <meta name="description" content="Estudo com react-hook-form" />
       </Head>
       <Box position={'relative'}>
         <Navbar />
